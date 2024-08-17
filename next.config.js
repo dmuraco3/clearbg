@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: "export",
 
     webpack: (config) => {
         config.resolve.alias = {
@@ -10,6 +9,15 @@ const nextConfig = {
         }
         return config;
     },
+
+    images: {
+        remotePatterns: [
+            {
+                protocol: "https",
+                hostname: "picsum.photos",
+            }
+        ]
+    }
 };
 
 module.exports = nextConfig

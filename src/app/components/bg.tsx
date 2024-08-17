@@ -88,8 +88,8 @@ const BG: React.FC = () => {
     return <div>
         <button onClick={()=>clickHandler()}>Do Work</button>
         <div className="flex justify-between">
-            <canvas ref={canvasRef}/>
-            <canvas ref={originalCanvasRef}/>
+            {/* <canvas ref={canvasRef}/>
+            <canvas ref={originalCanvasRef}/> */}
 
         </div>
     </div>
